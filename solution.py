@@ -1,0 +1,10 @@
+#PROJECT EULER PROBLEM 1
+#IF WE LIST ALL THE NATURAL NUMBERS BELOW 10 THAT ARE MULTIPLES OF 3 OR 5, WE GET 3, 5, 6 AND 9. THE SUM OF THESE MULTIPLES IS 23.
+#FIND THE SUM OF ALL THE MULTIPLES OF 3 OR 5 BELOW 1000.
+
+SumOfAll = 0
+nums = range(1,1000)
+for i in nums:
+    if i % 3 == 0 or i % 5 == 0:
+         SumOfAll = SumOfAll + i
+print SumOfAll
